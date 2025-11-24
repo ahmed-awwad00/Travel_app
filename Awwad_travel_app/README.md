@@ -1,46 +1,62 @@
-# Awwad Travel App
+# 🌍 Awwad Travel App
 
-A modern travel-booking / trip-planning web application built with [insert your tech stack here: e.g., React, Node.js, MongoDB] that allows users to explore destinations, book trips, and manage their travel experience.
+A full-stack travel information web application built using **Node.js, Express, Vanilla JavaScript, SCSS, and Webpack**.  
+Users can search for travel destinations, view city details, and interact with a dynamic interface powered by external APIs.
 
-## 🧭 Table of Contents
-- [Features](#features)  
-- [Tech Stack](#tech-stack)  
-- [Getting Started](#getting-started)  
-  - [Prerequisites](#prerequisites)  
-  - [Installation](#installation)  
-  - [Running the App](#running-the-app)  
-- [Project Structure](#project-structure)  
-- [Screenshots](#screenshots)  
-- [Roadmap](#roadmap)  
-- [Contributing](#contributing)  
-- [License](#license)  
+---
 
-## Features
-- Browse and search for travel destinations  
-- View destination details (images, description, reviews)  
-- User sign-in / authentication  
-- Create / manage bookings  
-- Responsive UI for mobile and desktop  
-- [Any other features your app includes]
+## 🔍 Deep Dive
 
-## Tech Stack
-- Frontend: React (or …)  
-- Backend: Node.js + Express (or …)  
-- Database: MongoDB (or …)  
-- State Management: Redux (or …)  
-- Authentication: JWT (or …)  
-- Styling: CSS Modules / Tailwind (or …)  
-*Feel free to modify these according to your actual stack.*
+This project uses a clean and scalable architecture combining both **client-side rendering** and a **Node.js backend**:
 
-## Getting Started
+### 🎨 Frontend
+- Built with **Vanilla JavaScript**
+- SCSS styling compiled using **Webpack**
+- Organized SCSS architecture (breakpoints, global styles)
+- Views rendered dynamically from `views/`
 
-### Prerequisites
-- Node.js (v16+ recommended)  
-- npm (v8+ recommended)  
-- Git  
+### 🧠 Backend
+- Node.js + Express server (`server/index.js`)
+- API routes to fetch city data (`server/fetchCityInfo.js`)
+- Integration with external travel APIs
+- Follows modular service-based structure
 
-### Installation
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/ahmed-awwad00/Travel_app.git
-   
+### ⚙️ Build System (Webpack)
+- `webpack.common.js` — Shared config
+- `webpack.dev.js` — Development build (Hot reload, source maps)
+- `webpack.prod.js` — Optimized production build (minified assets)
+
+### 🧪 Testing
+- Jest test suite:
+  - `formHandler.test.js`
+  - `server.test.js`
+
+This architecture allows clean scaling, organized code, and smooth development workflows.
+
+---
+
+## 🧰 Technologies
+
+### Frontend
+- JavaScript (ES6)
+- HTML / SCSS
+- Webpack Bundler
+
+### Backend
+- Node.js
+- Express.js
+
+### Tools
+- Jest (Testing)
+- Babel
+- Git & GitHub
+- npm
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/ahmed-awwad00/Travel_app.git
+cd Travel_app/Awwad_travel_app
